@@ -1,0 +1,1 @@
+docker stack rm desafio_devops_2025
