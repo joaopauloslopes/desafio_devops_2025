@@ -28,3 +28,16 @@ services:
         limits:
           cpus: "0.50"
           memory: 256M
+
+  nginx:
+    image: nginx-custom:1
+    ports:
+      - "80:80"
+    depends_on:
+      - python
+      - node
+    deploy:
+      resources:
+        limits:
+          cpus: "0.25"
+          memory: 128M        
