@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+  python:
+    image: api-cache-dados-python:1
+    ports:
+      - 8000:8000
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 256M
+
+  node:
+    image: api-cache-dados-node:1
+    ports:
+      - 3000:3000
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 256M
+
+  redis:
+    image: redis_custom:1
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: 256M
+
+  nginx:
+    image: nginx-custom:1
+    ports:
+      - "80:80"
+    depends_on:
+      - python
+      - node
+    deploy:
+      resources:
+        limits:
+          cpus: "0.25"
+          memory: 128M        
