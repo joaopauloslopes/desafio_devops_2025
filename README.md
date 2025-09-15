@@ -1,15 +1,8 @@
 # desafio_devops_2025
 ## Repositório de códigos do Desafio Devops 2025
 
-## Atividades
-### TASK 1
-####    Criar arquitetura
-####    Criar redis
-### TASK 2    
-####    Criar código das aplicação python
-####    Criar scripts e stack para docker swarm
-### TASK 3
-####    Criar nginx para controlar as rotas dos microserviços
+## Como usar
+
 
 ### Melhorias
 ####    Adicionar observabilidade para identificar erros de respostar do endpoints
@@ -20,4 +13,4 @@
 ####    Alterar deploy para kubernetes
 
 ### Diagrama de arquitetura
-!(Desafio_devops_2025)
+![Diagrama de arquitetura](Desafio_devops_2025)
