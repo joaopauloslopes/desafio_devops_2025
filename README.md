@@ -13,4 +13,4 @@
 ####    Alterar deploy para kubernetes
 
 ### Diagrama de arquitetura
-![Diagrama de arquitetura](Desafio_devops_2025)
+![Diagrama de arquitetura](Desafio_devops_2025.jpg)
